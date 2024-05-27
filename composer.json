@@ -1,54 +1,53 @@
 {
-    "name": "komet/preset",
-    "description": "My Laravel Preset",
-    "keywords": [
-        "komet",
-        "preset"
-    ],
-    "homepage": "https://github.com/kometsoft/preset",
-    "license": "MIT",
-    "type": "library",
-    "authors": [
-        {
-            "name": "Ali",
-            "email": "ali@domain.com",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php": "^7.4|^8.0",
-        "illuminate/support": "^8.0"
-    },
-    "require-dev": {
-        "orchestra/testbench": "^6.0",
-        "phpunit/phpunit": "^9.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Komet\\Preset\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Komet\\Preset\\Tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Komet\\Preset\\PresetServiceProvider"
-            ],
-            "aliases": {
-                "Preset": "Komet\\Preset\\PresetFacade"
-            }
-        }
+  "name": "komet/preset",
+  "description": "My Laravel Preset",
+  "keywords": [
+    "komet",
+    "preset"
+  ],
+  "homepage": "https://github.com/kometsoft/preset",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Ali",
+      "email": "ali@domain.com",
+      "role": "Developer"
     }
+  ],
+  "require": {
+    "php": "^7.4|^8.0",
+    "illuminate/support": "^10.0|^11.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.0",
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Komet\\Preset\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Komet\\Preset\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Komet\\Preset\\PresetServiceProvider"
+      ],
+      "aliases": {
+        "Preset": "Komet\\Preset\\PresetFacade"
+      }
+    }
+  }
 }
