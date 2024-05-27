@@ -15,19 +15,20 @@ class PresetServiceProvider extends ServiceProvider
          * Optional methods to load your package assets
          */
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'preset');
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'preset');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'preset');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('preset.php'),
+                __DIR__ . '/../config/config.php' => config_path('preset.php'),
             ], 'config');
 
             // Publishing the views.
-            /*$this->publishes([
-                __DIR__.'/../resources/views' => resource_path('views/vendor/preset'),
-            ], 'views');*/
+            $this->publishes([
+                __DIR__ . '/../resources/js' => resource_path('vendor/preset/js'),
+                __DIR__ . '/../resources/sass' => resource_path('vendor/preset/sass'),
+            ], 'tabler');
 
             // Publishing assets.
             /*$this->publishes([
@@ -50,7 +51,7 @@ class PresetServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'preset');
+        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'preset');
 
         // Register the main class to use with the facade
         $this->app->singleton('preset', function () {
