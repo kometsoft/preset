@@ -1,8 +1,8 @@
 # Very short description of the package
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/foo/preset.svg?style=flat-square)](https://packagist.org/packages/foo/preset)
-[![Total Downloads](https://img.shields.io/packagist/dt/foo/preset.svg?style=flat-square)](https://packagist.org/packages/foo/preset)
-![GitHub Actions](https://github.com/foo/preset/actions/workflows/main.yml/badge.svg)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/komet/preset.svg?style=flat-square)](https://packagist.org/packages/komet/preset)
+[![Total Downloads](https://img.shields.io/packagist/dt/komet/preset.svg?style=flat-square)](https://packagist.org/packages/komet/preset)
+![GitHub Actions](https://github.com/komet/preset/actions/workflows/main.yml/badge.svg)
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
 
@@ -11,7 +11,7 @@ This is where your description should go. Try and limit it to a paragraph or two
 You can install the package via composer:
 
 ```bash
-composer require foo/preset
+composer require komet/preset
 ```
 
 ## Usage
@@ -40,7 +40,7 @@ If you discover any security related issues, please email ali@domain.com instead
 
 ## Credits
 
--   [Ali](https://github.com/foo)
+-   [Ali](https://github.com/komet)
 -   [All Contributors](../../contributors)
 
 ## License

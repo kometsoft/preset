@@ -1,6 +1,6 @@
 <?php
 
-namespace Foo\Preset;
+namespace Komet\Preset;
 
 class Preset
 {

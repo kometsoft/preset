@@ -1,11 +1,11 @@
 {
-    "name": "foo/preset",
+    "name": "komet/preset",
     "description": "My Laravel Preset",
     "keywords": [
-        "foo",
+        "komet",
         "preset"
     ],
-    "homepage": "https://github.com/foo/preset",
+    "homepage": "https://github.com/kometsoft/preset",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Foo\\Preset\\": "src"
+            "Komet\\Preset\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Foo\\Preset\\Tests\\": "tests"
+            "Komet\\Preset\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Foo\\Preset\\PresetServiceProvider"
+                "Komet\\Preset\\PresetServiceProvider"
             ],
             "aliases": {
-                "Preset": "Foo\\Preset\\PresetFacade"
+                "Preset": "Komet\\Preset\\PresetFacade"
             }
         }
     }

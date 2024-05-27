@@ -1,11 +1,11 @@
 <?php
 
-namespace Foo\Preset;
+namespace Komet\Preset;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Foo\Preset\Skeleton\SkeletonClass
+ * @see \Komet\Preset\Skeleton\SkeletonClass
  */
 class PresetFacade extends Facade
 {
