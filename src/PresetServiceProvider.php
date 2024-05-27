@@ -15,7 +15,7 @@ class PresetServiceProvider extends ServiceProvider
          * Optional methods to load your package assets
          */
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'preset');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'preset');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'preset');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
